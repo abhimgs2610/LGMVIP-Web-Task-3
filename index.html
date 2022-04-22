@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<aside><img src="images.png" alt=""></aside><br> <br><aside>
+	<center>Student Enrollment Form</center>
+	<h2 class="enst">Enrolled Students</h2>
+	<table border="4" id="print">
+		<thead>
+			<tr>
+				<th class="_Name"> Name </th>
+				<th class="_Email">Email</th>
+				<th class="_Webs"> Website </th>
+				<th class="_Gender"> Gender </th>
+				<th class="_Skills"> Skills </th>
+			</tr>
+		</thead>
+	</table>
+	    <form id="myForm">
+			<h1>Registration Form</h1>
+            <label class="_name"> Name <input id="name" type="text"required></label><br>
+			<label class="_email"> Email <input id="email" type="email"required placeholder="me@hy.com"></label><br>
+            <label class="_webs"> Website <input id="webs" type="text"required></label><br>
+            <label class="_gender"> Gender</label>
+                <select id="gender">
+	            <option value="none" selected>Gender</option>
+	            <option value="Male">Male</option>
+	            <option value="Female">Female</option>
+	            <option value="Other">other</option>
+                </select><br>
+	        <label class="_skills">Skills :</label>  
+		        <select id="skills">  
+		            <option value="skills">skills</option>  
+		            <option value="Java">Java</option>  
+		            <option value="Html5">Html5</option>  
+		            <option value="CSS">CSS</option>  
+		            <option value="JavaScript">JavaScript</option>
+		        </select><br>
+		   <label class="_btn">
+			    <input id="reset" type="reset" value="Reset"> 
+			    <input id="btn" type="button" value="Submit" onclick="AddRow()">
+			</label><br>
+        </form>
+    <script src="main.js" ></script>
+</body>
+</html>
